@@ -1,0 +1,42 @@
+[user]
+    name = Andre Beckedorf
+    email = andre.beckedorf@something
+
+[color]
+    pager = true
+    ui = true
+    status = auto
+    branch = auto
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[alias]
+   lola = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+   lol = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+   exec = pushd $(git rev-parse --show-toplevel); %1 ;popd
+
+[push]
+   default = simple
+
+[diff]
+   tool = meld
+
+[merge]
+   tool = meld
+
+[difftool]
+  promt = false
+
+[difftool "meld"]
+  cmd = meld "$LOCAL" "$REMOTE"
+
+[mergetool "clion"]
+  cmd = clion merge "$LOCAL" "$REMOTE"
+
+[http]
+	sslVerify = false
+[credential]
+	helper = store
