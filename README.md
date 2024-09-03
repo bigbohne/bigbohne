@@ -2,14 +2,13 @@
 
 You've found my github repository.
 
-I'm currently working as a Lead Software Engineer at SSW-Trading (www.ssw-trading.com) near Hamburg(Germany).
+I'm currently working as a Solutions Architect for SCHUFA Holding AG (www.schufa.de).
 
-I'm developing high-frequency-trading and support-applications using C++, Python and JavaScript.
+I'm developing cloud native applications for the AWS platform.
 
 My topics of interest are:
 - The Cloud (AWS)
-- Kubernetes
-- Kafka
+- Typescript
 
 Skills (amongst other):
 - C++
